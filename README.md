@@ -86,5 +86,3 @@ Para executando execute o comando:
 No momento da execução, será solicitado a chave de acesso dos arquivos criptografado.
 
 Obs.: Caso não estiver dentro da pasta onde esta a playbook, coloque o caminho completo.
-
-
