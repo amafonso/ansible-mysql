@@ -15,7 +15,7 @@
 -- Modulo python PyMySQL
 
 **Estrutura da pasta playbook:**
-
+```
 .
 └── mysql (raiz)
 ---------├── group_vars
@@ -30,6 +30,7 @@
 ---------│---------└── mysql-restore
 ---------│---------│---------└── tasks
 ---------│---------│------------------└── main.yml
+```
 
 **Segurança:** 
 
