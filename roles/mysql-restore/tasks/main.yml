@@ -1,0 +1,9 @@
+---
+# tasks file for roles/mysql-backup-restore
+- name: MYSQL - Restore all databases
+  community.mysql.mysql_db:
+    login_user: "{{ mysql_user }}"
+    login_password: "{{ mysql_pass }}"
+    state: import
+    name: all
+    target: "{{ repo_backup  }}"

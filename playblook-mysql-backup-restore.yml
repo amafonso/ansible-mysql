@@ -1,0 +1,11 @@
+---
+- name: MySQL - Dump all databases
+  hosts: hostbackup
+  roles:
+    - mysql-backup
+
+- name: MySQL - Import Dump all databases
+  hosts: hostrestore
+  roles:
+    - mysql-restore
+

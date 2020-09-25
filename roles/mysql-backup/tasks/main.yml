@@ -1,0 +1,12 @@
+---
+## tasks file for roles/mysql-backup
+# Tarefa de backup
+
+- name: MYSQL - Dump all databases
+  community.mysql.mysql_db:
+    login_user: "{{ mysql_user }}"
+    login_password: "{{ mysql_pass }}"
+    unsafe_login_password: true
+    state: dump
+    name: all
+    target: "{{ repo_backup  }}"

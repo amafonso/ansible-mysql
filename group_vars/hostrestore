@@ -1,0 +1,25 @@
+#Porta de acesso
+ansible_ssh_port: 22
+
+# Usuário de conexão SSH
+ansible_ssh_user: 
+
+# Senha de acesso SSH por Certificado, permissao de arquivo 0600
+# ansible_ssh_private_key_file: /home/devops-admin/.ssh/id_rsa
+
+# Senha de acesso SSH
+ansible_ssh_password: 
+
+#Senha do ROOT
+ansible_become: yes
+ansible_become_method: sudo
+ansible_become_user: 
+ansible_become_pass: 
+ansible_connection: ssh
+
+# Dados de conexao com Mysql
+mysql_user: ''
+mysql_pass: ''
+
+# Repositorio de backup
+repo_backup: "/tmp/dumall-{{ansible_date_time.day}}.sql"
